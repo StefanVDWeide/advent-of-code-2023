@@ -80,6 +80,7 @@ pub fn solution_2() -> i32 {
                 .last()
                 .unwrap_or(&(first_idx, first_num_str))
                 .1;
+
             sum += format!("{}{}", first_num_str, last_num_str)
                 .parse::<i32>()
                 .unwrap();
